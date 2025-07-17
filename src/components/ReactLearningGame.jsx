@@ -491,7 +491,32 @@ const ReactLearningGame = () => {
                     ))}
                 </div>
             </div>
+
+            {/* Footer */}
+            <footer className="mt-12 text-center text-sm text-indigo-300">
+                <p>
+                    Made by <a
+                        href="https://github.com/GurdeepSingh19"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-white hover:text-orange-400"
+                    >
+                        Gurdeep Singh
+                    </a>
+                    {' '}|{' '}
+                    <a
+                        href="https://allianceitsolutions.co.nz/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-white hover:text-orange-400"
+                    >
+                        Alliance IT Solutions
+                    </a>
+                </p>
+            </footer>
+
         </div>
+
     );
 };
 
