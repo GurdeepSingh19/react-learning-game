@@ -262,14 +262,14 @@ const ReactLearningGame = () => {
         try {
             // This is a simplified preview - in a real app you'd use a proper code execution environment
             if (userCode.includes('Hello, React!')) {
-                return <div className="p-4 bg-white rounded">Hello, React!</div>;
+                return <div className="p-4 bg-gray-900 rounded">Hello, React!</div>;
             }
             if (userCode.includes('props.name')) {
-                return <div className="p-4 bg-white rounded">Hello, John!</div>;
+                return <div className="p-4 bg-gray-900 rounded">Hello, John!</div>;
             }
             if (userCode.includes('useState') && userCode.includes('count')) {
                 return (
-                    <div className="p-4 bg-white rounded">
+                    <div className="p-4 bg-gray-900 rounded">
                         <p>Count: 5</p>
                         <button className="px-4 py-2 bg-blue-500 text-white rounded">Increment</button>
                     </div>
@@ -277,7 +277,7 @@ const ReactLearningGame = () => {
             }
             if (userCode.includes('map') && userCode.includes('items')) {
                 return (
-                    <div className="p-4 bg-white rounded">
+                    <div className="p-4 bg-gray-900 rounded">
                         <ul>
                             <li>Apple</li>
                             <li>Banana</li>
@@ -286,7 +286,7 @@ const ReactLearningGame = () => {
                     </div>
                 );
             }
-            return <div className="p-4 bg-gray-100 rounded">Preview will appear here</div>;
+            return <div className="p-4 bg-gray-900 rounded">Preview will appear here</div>;
         } catch (error) {
             return <div className="p-4 bg-red-100 rounded text-red-600">Error in code</div>;
         }
